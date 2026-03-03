@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starbound Sprint - HTML Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="game-shell">
+    <header id="hud">
+      <div>Lives: <span id="lives">3</span></div>
+      <div>Coins: <span id="coins">0</span></div>
+      <div>Power: <span id="power">Normal</span></div>
+      <div>Time: <span id="timer">300</span></div>
+      <div>World: <span id="world">Aurora Fields</span></div>
+    </header>
+    <canvas id="game" width="1280" height="720" aria-label="Starbound Sprint game canvas"></canvas>
+    <section id="controls">
+      <strong>Controls:</strong>
+      Move A/D or ←/→ · Jump Space · Attack J · Spin K · Ground Pound S/↓ in air · Toggle Powerups 1/2/3 · Double Jump Unlock U
+    </section>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
